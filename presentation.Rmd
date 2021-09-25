@@ -62,6 +62,7 @@ Affiliated with the Interdisciplinary Lab on Computational Social Science at UMD
 
 --
 
+---
 
 ## Plans for Talk
 
@@ -443,11 +444,7 @@ knitr::include_graphics("./fgv_pres/polls_on_positive_comments.png")
 class:inverse, middle, center
 
 
-## Well.. we actually do have a second purely descriptive piece about the composition of comments on facebook streaming chats. 
-
---
-
-**Bringing the Audience Back In: Connective Effervescence and Streaming Chat During Political Debates.** Journal of Quantitative Description: Digital Media. 
+#### Bringing the Audience Back In: Connective Effervescence and Streaming Chat During Political Debates. *Journal of Quantitative Description: Digital Media.*
 
 --
 
