@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>The Effect of Streaming Chat on Perceptions of Political Debates</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tiago Ventura" />
+    <meta name="date" content="2021-09-29" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# The Effect of Streaming Chat on Perceptions of Political Debates
+## A Large-scale Digital Field Experiment
+### Tiago Ventura
+### University of Maryland, College Park
+### 09/29/2021
+
+---
+
+
+
+class: inverse
+
+.pull-left[
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+## About me ...
+
+Researcher on Civic Integrity on @Twitter.
+
+Ph.D Candidate Government and Politics at University of Maryland.
+
+Affiliated with the Interdisciplinary Lab on Computational Social Science at UMD.
+
+]
+
+--
+
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;img style="border-radius: 50%;" src="tiago.jpg" width="150px"/&gt;
+
+### Find me at...
+[&lt;svg role="img" viewBox="0 0 24 24" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"&gt;&lt;/path&gt;&lt;/svg&gt; @TiagoVentura_](https://twitter.com/_Tiagoventura)
+
+[&lt;svg role="img" viewBox="0 0 24 24" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"&gt;&lt;/path&gt;&lt;/svg&gt; TiagoVentura](https://github.com/TiagoVentura)
+
+[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"&gt;&lt;/path&gt;&lt;/svg&gt; venturat@umd.edu](venturat@umd.edu)
+
+[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M208,352H144a96,96,0,0,1,0-192h64" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:36px"&gt;&lt;/path&gt;  &lt;path d="M304,160h64a96,96,0,0,1,0,192H304" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:36px"&gt;&lt;/path&gt;  &lt;line x1="163.29" y1="256" x2="350.71" y2="256" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:36px"&gt;&lt;/line&gt;&lt;/svg&gt; https://tiagoventura.rbind.io/](https://tiagoventura.rbind.io/)
+]
+
+--
+
+
+## Plans for Talk
+
+--
+
+- **The Effect of Streaming Chats on Perceptions of Debates.** Forthcoming at the Journal of Communication .footnote[Thanks to co-authors: Kevin Munger, Katherine McCabe, Victory Asbury and Keng-Chi on Streaming Chats. And to Russel Sage Foundation and the Summer Institute in Computational Social Science for providing funding and institutional support to the projects.] 
+
+
+- **Bringing the Audience Back In: Connective Effervescence and Streaming Chat During Political Debates.** Journal of Quantitative Description: Digital Media. 
+
+--
+
+- **What I Wish I Knew**: A bit of my experience as a researcher at @Twitter: 
+
+
+
+
+---
+class:middle, center, inverse
+
+## Streaming Chats and Politcs.
+
+---
+
+class: middle, center
+
+### United States: AOC
+
+&lt;img src="./figs/aoc.png" width="50%" /&gt;
+
+### Brazil: Jair Bolsonaro
+
+&lt;img src="./figs/bolso.png" width="50%" /&gt;
+
+---
+## Streaming Chats
+
+--
+
+- **Video Feed + Comments: All in one screen.**
+
+--
+
+- Most of times: really fast and chaotic conversations.
+
+--
+
+- Popular among the young 
+
+    - Twitch (Amazon)
+    - YouTube/YouTube Gaming (Google)
+    - Mixer (Microsoft)
+    
+---
+## From Passive Consumer to Co-Creator.
+
+These trends converge to broader transformations in the media market:
+
+- Media consumption becoming more social. 
+
+- Media producers encouraging audiences to engage with their content via social media.
+
+- Dual Screening as the modal media consumption.
+
+- Comments sections everywhere. 
+
+--
+
+---
+class: center, inverse
+
+### Are we paying enough attention to these new trends?
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;img src="./figs/gu.png" width="60%" /&gt;
+ 
+---
+class: center, middle
+
+
+### What are the effects of &lt;a style="color:red"&gt;live broadcast with streaming chats &lt;/a&gt; on the public viewing experiences? 
+
+---
+
+### The Effect of Streaming Chat on Perceptions of Political Debates
+
+We conducted a large scale ''field" experiment that assigns would-be debate viewers to watch the October 2019 Democratic Debate
+
+--
+&lt;br&gt;&lt;br&gt;
+**Three main experimental conditions**
+
+- Control (standard NBC broadcast)
+- Expert chat (538 website)
+- Streaming chat (Facebook)
+
+--
+&lt;br&gt;
+&lt;br&gt;
+
+We then surveyed the respondents before and after, and measured the effects of streaming chats. 
+
+--
+
+---
+
+### Related Literature: Dual Screening
+
+At least a decade of research in Political Communication:  Users engage **real-time conversations** on a second screen (Twitter). 
+
+- Initial concern about "distraction" supplanted by thinking about purposiveness (Gottfried et al., 2017; Van Cauwenberge et al., 2015, 2014)
+
+- Viewers decide how to allocate their attention  (McGregor and Mourão, 201)7
+
+- Changes the emphasis on what is observed: **priming**  (Barnidge et al., 2017)
+
+
+**Main Conclusion**: Dual Screening generates more online political engagement (Barnidge et al., 2017; Gil de Zúñiga et al., 2015; McGregor and Mourão, 2017; Vaccari et al., 2015)
+
+
+---
+
+## New Features of Streaming Chats
+  
+
+**Different audience, different technology:**
+  
+  - Who is watching the Facebook livestream of a debate? 
+  
+  - Chat streams at eye-level; only one conversation (no personalization/viewer discretion)
+
+- Thousands of comments, difficult to follow, and one only observes nodes of the network (majority illusion). 
+
+---
+class: middle
+
+**More cross-cutting information and shift from genteel (possibly partisan) broadcasters towards the garbage fire that is comment sections**
+
+- No moderation in real-time 
+
+- Lots of repetition - "memes"  
+
+- Hard to self-select (decide who to follow) 
+
+
+
+
+
+---
+class: middle
+
+**Priming a very different set of issues**
+
+- Many are outside the scope of standard politics 
+
+- Maybe good (elite primes downplay serious attacks on candidate weakness)
+
+- Maybe bad (reinforcing anti-deliberative, discriminatory and even hateful primes)
+  
+---
+## Theorethical Pathways
+
+We use the “Mix of Attributes” approach (Eveland, 2003) for describing new media technology and theorizing about its effects:
+
+We theorize streaming chats are particularly distinct in four aspects:
+
+
+- **Frequency**: high volume of very short comments.
+
+- **Content**: topics discussed serve as primes.
+
+- **Context**: comments' composition leads to inaccurate inferences of overall public.
+
+- **Toxicity**: almost anonymity and size of the comments are prone to high levels of toxicity. 
+
+---
+class:inverse, middle, center
+
+## Research Design
+
+---
+## Research Design and Sample
+
+Two-Wave On-line Survey in September 2019 through MTurk (following Gross, Porter and Wood, 2019). 
+
+**Wave 1 pre-debate survey with 2352 respondents**
+
+- Identified respondents likely to watch debate, have Facebook account, could watch debate on a computer.
+
+**Encouraged 1095 eligible and interested participants to watch debate on randomly assigned platform.**
+    
+**Wave 2 survey with 908 respondents**
+
+- Analysis focuses on 576 Wave 2 Democratic respondents (including leaners) who watched at least part of the debate.
+
+- N= 204 (Control), N= 174 (Expert), N= 198 (Social)
+
+---
+
+### Treatment Arms
+
+
+
+.pull-left[![](./fgv_pres/screenshot-fbblurcopy.png)]
+.pull-right[![](./fgv_pres/screenshot-538-blurcopy.png)]
+
+.center[
+
+&lt;img src="./fgv_pres/screenshot-abc.png" width="60%" /&gt;
+
+]
+
+---
+## Text Analysis
+
+To complement our analysis, we scrapped the comments on the three plataforms. 
+
+- 300 Comments on Expert + 6915 on Facebook. 
+
+- Perform Dictionary Methods Sentiment Analysis. 
+
+- Labelled the comments manually to identify topics. 
+
+- Deep Learning Models to identify toxicity. 
+
+---
+
+## Hypotheses
+
+&lt;br&gt;&lt;br&gt;
+&lt;table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:center;"&gt; Pathway &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Social &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Expert &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;width: 1in; font-weight: bold;"&gt; Frequency (Distraction) &lt;/td&gt;
+   &lt;td style="text-align:left;width: 3in; "&gt; Less Enjoyable and Informative, More Engaged &lt;/td&gt;
+   &lt;td style="text-align:left;width: 3in; "&gt; More Enjoyable, Informative, Engaging &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;width: 1in; font-weight: bold;"&gt; Toxicity (Affective) &lt;/td&gt;
+   &lt;td style="text-align:left;width: 3in; "&gt; Angrier and More Anxious &lt;/td&gt;
+   &lt;td style="text-align:left;width: 3in; "&gt; Less Angrier and Anxious &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;width: 1in; font-weight: bold;"&gt; Content (Priming) &lt;/td&gt;
+   &lt;td style="text-align:left;width: 3in; "&gt; Reduce Support Candidates with Negative Priming &lt;/td&gt;
+   &lt;td style="text-align:left;width: 3in; "&gt; Reduce Support Candidates with Negative Priming &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;width: 1in; font-weight: bold;"&gt; Context (Inferences) &lt;/td&gt;
+   &lt;td style="text-align:left;width: 3in; "&gt; Increase estimates of Success Candidates More Positive &lt;/td&gt;
+   &lt;td style="text-align:left;width: 3in; "&gt; Increase estimates of Success Candidates More Positive &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+class:inverse, middle, center
+
+## Text Analysis: Validating Theoretical Premises
+
+---
+### High Frequency
+
+
+.center[
+&lt;img src="./fgv_pres/freq-bind.png" width="80%" /&gt;
+]
+---
+### Much more toxic:
+
+.center[
+&lt;img src="./fgv_pres/proportion_toxicity.png" width="80%" /&gt;
+].footnote[Deep Learning Models from Google Perspective API]
+
+---
+### Contains Mostly Negative Primes
+
+.center[
+&lt;img src="./fgv_pres/topics_3by_cand.png" width="80%" /&gt;
+]
+
+---
+#### Mostly Negative Polarity about the Candidates
+
+.center[
+&lt;img src="./fgv_pres/polarity_candidates.png" width="80%" /&gt;
+]
+
+---
+class:inverse, middle, center
+
+## Experimental Results
+
+---
+## Frequency and Toxicity Hypothesis Key Results
+
+.center[
+Social chat somewhat less informative, enjoyable, and engaging
+&lt;img src="./fgv_pres/ftplot.png" width="80%" /&gt;
+]
+
+---
+## Feeling Thermomethers about the Candidates
+
+&lt;img src="./fgv_pres/ftplot.png" width="80%" /&gt;
+
+---
+## Content Effect
+.center[
+Social chat somewhat less informative, enjoyable, and engaging
+&lt;img src="./fgv_pres/ft_on_negative_comments.png" width="80%" /&gt;
+]
+
+
+---
+## Poll Performance
+
+&lt;img src="./fgv_pres/pollplot.png" width="80%" /&gt;
+
+---
+## Context Effect
+.center[
+Positive social chat associated with projected poll performance.
+&lt;img src="./fgv_pres/polls_on_positive_comments.png" width="80%" /&gt;
+]
+
+
+---
+## Summary
+
+.pull-left[
+**Main Findings**:
+
+- Includes more frequent and more negative comments than expert chat.
+
+- Creates worse viewing experience.
+
+- May disproportionately negatively affect certain candidates subject to toxic, negative comments.
+
+- May distort inferences about candidate viability.
+
+]
+
+.pull-right[
+**Next Steps**:
+
+- More research on the mechanism
+
+- More Comparative Evidence. 
+
+
+- More descriptive evidence about these news technologies.
+
+]
+
+---
+class:inverse, middle, center
+
+
+## Well.. we actually do have a second purely descriptive piece about the composition of comments on facebook streaming chats. 
+
+--
+
+**Bringing the Audience Back In: Connective Effervescence and Streaming Chat During Political Debates.** Journal of Quantitative Description: Digital Media. 
+
+--
+
+---
+
+## Brief Summary:
+
+We scrapped the chatboxes of livestreamed Presidential debates on the ABC News, NBC News, and Fox News Face-book pages. 
+
+Collected more than one hundread thousand comments. 
+
+Use deep-learning toxicity models to detect the amount of hateful sppech in each of the debates. 
+
+---
+## The Machine Working:
+
+
+---
+## Levels of Toxicity
+
+Close to 20% of comments are classified as toxic or insult. 
+
+&lt;img src="./fgv_pres/tox_jqd.png" width="80%" /&gt;
+---
+## Strong Partisan Dynamics. 
+
+&lt;img src="./fgv_pres/tox_jqd_desc.png" width="80%" /&gt;
+
+---
+class: inverse, middle, center
+
+### As these new technologies start to dominate broadcasting of political events, attracting particularly &lt;a style:"color=red"&gt; younger audiences &lt;/a&gt;, we need more social science &lt;a style:"color=red"&gt; descriptive and causal research &lt;/a&gt; about the effects on users' behavior. 
+
+---
+class: middle, center
+
+### &lt;svg role="img" viewBox="0 0 24 24" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"&gt;&lt;/path&gt;&lt;/svg&gt; About being a Researcher in the Industry &lt;svg role="img" viewBox="0 0 24 24" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+
+---
+class:middle
+
+### Learn your methods... But it is likely that you will be hired by the interesting questions your research answers. 
+
+--
+
+&lt;img src="figs/my_research.jpg" width="100%" /&gt;
+
+--
+
+
+---
+class: middle
+
+### Be Versatile. Learn how to learn new things. Show you can play on multiple fields.  
+
+--
+
+&lt;img src="figs/methods.jpg" width="100%" /&gt;
+
+--
+
+---
+class:middle
+
+--
+### Take seriously the policy implications of your research now. That is pretty much what the industry is looking for. 
+
+--
+
+---
+
+### Take time to learn SQL. Simple, and almost as important as any other language. 
+
+---
+
+
+
+---
+class:inverse, middle, center
+
+# Thank you!
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
