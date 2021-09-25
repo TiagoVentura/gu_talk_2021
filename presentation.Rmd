@@ -531,5 +531,5 @@ class:middle
 ---
 class:inverse, middle, center
 
-# Thank you!
+# Thank you! 
 
