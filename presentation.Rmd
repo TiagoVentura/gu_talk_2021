@@ -1,6 +1,5 @@
 ---
 title: "The Effect of Streaming Chat on Perceptions of Political Debates"
-subtitle: "A Large-scale Digital Field Experiment"
 author: "Tiago Ventura"
 institute: "University of Maryland, College Park"
 date: "09/29/2021"
@@ -39,7 +38,7 @@ Researcher on Civic Integrity on @Twitter.
 
 Ph.D Candidate Government and Politics at University of Maryland.
 
-Affiliated with the Interdisciplinary Lab on Computational Social Science at UMD.
+Affiliated with the Interdisciplinary Lab for Computational Social Science at UMD.
 
 ]
 
@@ -68,14 +67,14 @@ Affiliated with the Interdisciplinary Lab on Computational Social Science at UMD
 
 --
 
-- **The Effect of Streaming Chats on Perceptions of Debates.** Forthcoming at the Journal of Communication .footnote[Thanks to co-authors: Kevin Munger, Katherine McCabe, Victory Asbury and Keng-Chi on Streaming Chats. And to Russel Sage Foundation and the Summer Institute in Computational Social Science for providing funding and institutional support to the projects.] 
+- **The Effect of Streaming Chats on Perceptions of Debates.** Forthcoming at the Journal of Communication .footnote[Thanks to my co-authors: Kevin Munger, Katherine McCabe, Victory Asbury and Keng-Chi. And to Russell Sage Foundation and the Summer Institute in Computational Social Science for providing funding and institutional support to the projects.] 
 
 
-- **Bringing the Audience Back In: Connective Effervescence and Streaming Chat During Political Debates.** Journal of Quantitative Description: Digital Media. 
+<!-- - **Bringing the Audience Back In: Connective Effervescence and Streaming Chat During Political Debates.** Journal of Quantitative Description: Digital Media, 2020 -->
 
 --
 
-- **What I Wish I Knew**: A bit of my experience as a researcher at @Twitter: 
+- **What I Wish I Knew**: A bit of my experience as a researcher at @Twitter. 
 
 
 
@@ -83,23 +82,32 @@ Affiliated with the Interdisciplinary Lab on Computational Social Science at UMD
 ---
 class:middle, center, inverse
 
-## Streaming Chats and Politcs.
+## Streaming Chats and Politics.
 
 ---
 
-class: middle, center
+## From Passive Consumer to Co-Creator.
 
-### United States: AOC
+The emergence of new technologies has allowed media consumption to become more social.  
 
-```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("./figs/aoc.png")
-```
+Users moved from being passive consumers to active co-creators. 
 
-### Brazil: Jair Bolsonaro
+--
 
-```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("./figs/bolso.png")
-```
+- On the user side: emergence of social media app brings the user to the center of media production. 
+
+--
+
+- On the supply side: Media producers started to integrate their products with a strong audience participation. 
+
+    - Dual Screening: Encouraging audiences to engage with their content via social media.
+
+--
+
+ **Streaming Chats** are the most recent and powerful manifestation of new technologies allowing users to become co-creators of media production. 
+--
+
+
 
 ---
 ## Streaming Chats
@@ -110,35 +118,45 @@ knitr::include_graphics("./figs/bolso.png")
 
 --
 
-- Most of times: really fast and chaotic conversations.
+- Become more ubiquitous to media broadcasting in the last few years.
 
 --
 
-- Popular among the young 
+- Popular among the younger generations.
 
     - Twitch (Amazon)
     - YouTube/YouTube Gaming (Google)
     - Mixer (Microsoft)
-    
----
-## From Passive Consumer to Co-Creator.
-
-These trends converge to broader transformations in the media market:
-
-- Media consumption becoming more social. 
-
-- Media producers encouraging audiences to engage with their content via social media.
-
-- Dual Screening as the modal media consumption.
-
-- Comments sections everywhere. 
+    - Facebook Lives
 
 --
+
+
+---
+## Political Debates
+
+![](./figs/genelectionabc.png)
+
+
+---
+class: middle, center
+
+### AOC
+
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("./figs/aoc.png")
+```
+
+### Jair Bolsonaro
+
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("./figs/bolso.png")
+```
 
 ---
 class: center, inverse
 
-### Are we paying enough attention to these new trends?
+### Are we paying enough attention to these technologies?
 
 <br><br>
 
@@ -151,16 +169,18 @@ knitr::include_graphics("./figs/gu.png")
 class: center, middle
 
 
-### What are the effects of <a style="color:red">live broadcast with streaming chats </a> on the public viewing experiences? 
+### What are the effects of <a style="color:red"> streaming chats </a> on the public viewing experiences? 
 
 ---
 
 ### The Effect of Streaming Chat on Perceptions of Political Debates
 
-We conducted a large scale ''field" experiment that assigns would-be debate viewers to watch the October 2019 Democratic Debate
+We conducted a large scale ''field" experiment that assigns would-be debate viewers to watch on different platforms the October 2019 Democratic Debate.
 
 --
-<br><br>
+<br>
+<br>
+
 **Three main experimental conditions**
 
 - Control (standard NBC broadcast)
@@ -171,76 +191,40 @@ We conducted a large scale ''field" experiment that assigns would-be debate view
 <br>
 <br>
 
-We then surveyed the respondents before and after, and measured the effects of streaming chats. 
+We then surveyed the respondents after the debate and measured the effects of streaming chats. 
 
 --
 
 ---
 
-### Related Literature: Dual Screening
+## How are streaming chats different from Dual Screening?
+  
+  
+- **Different audience**. 6 out 10 young americans prefer to see TV on streaming (Pew,  2017). 
+  
+- **Different Technology**. Chat streams at eye-level; only one conversation. 
 
-At least a decade of research in Political Communication:  Users engage **real-time conversations** on a second screen (Twitter). 
+- **More cross-cutting information**
 
-- Initial concern about "distraction" supplanted by thinking about purposiveness (Gottfried et al., 2017; Van Cauwenberge et al., 2015, 2014)
+- **Shift from polite (possibly partisan) broadcasters towards the garbage fire that are the comment sections** 
 
-- Viewers decide how to allocate their attention  (McGregor and Mourão, 201)7
+- **Chaotic Discussion**: Only observes a node in the network (majority illusion)
 
-- Changes the emphasis on what is observed: **priming**  (Barnidge et al., 2017)
+- **Priming a very different set of issues**
 
 
-**Main Conclusion**: Dual Screening generates more online political engagement (Barnidge et al., 2017; Gil de Zúñiga et al., 2015; McGregor and Mourão, 2017; Vaccari et al., 2015)
 
+
+--
 
 ---
+## How does streaming chat influence perceptions of political events?
 
-## New Features of Streaming Chats
-  
-
-**Different audience, different technology:**
-  
-  - Who is watching the Facebook livestream of a debate? 
-  
-  - Chat streams at eye-level; only one conversation (no personalization/viewer discretion)
-
-- Thousands of comments, difficult to follow, and one only observes nodes of the network (majority illusion). 
-
----
-class: middle
-
-**More cross-cutting information and shift from genteel (possibly partisan) broadcasters towards the garbage fire that is comment sections**
-
-- No moderation in real-time 
-
-- Lots of repetition - "memes"  
-
-- Hard to self-select (decide who to follow) 
-
-
-
-
-
----
-class: middle
-
-**Priming a very different set of issues**
-
-- Many are outside the scope of standard politics 
-
-- Maybe good (elite primes downplay serious attacks on candidate weakness)
-
-- Maybe bad (reinforcing anti-deliberative, discriminatory and even hateful primes)
-  
----
-## Theorethical Pathways
-
-We use the “Mix of Attributes” approach (Eveland, 2003) for describing new media technology and theorizing about its effects:
-
-We theorize streaming chats are particularly distinct in four aspects:
-
+Mix of Attributes: 
 
 - **Frequency**: high volume of very short comments.
 
-- **Content**: topics discussed serve as primes.
+- **Content**: topics are mostly distinct from the ones discussed publicly during campaigns. 
 
 - **Context**: comments' composition leads to inaccurate inferences of overall public.
 
@@ -260,7 +244,7 @@ Two-Wave On-line Survey in September 2019 through MTurk (following Gross, Porter
 
 - Identified respondents likely to watch debate, have Facebook account, could watch debate on a computer.
 
-**Encouraged 1095 eligible and interested participants to watch debate on randomly assigned platform.**
+Encouraged 1095 eligible and interested participants to watch debate on randomly assigned platform.
     
 **Wave 2 survey with 908 respondents**
 
@@ -288,13 +272,13 @@ include_graphics("./fgv_pres/screenshot-abc.png")
 ---
 ## Text Analysis
 
-To complement our analysis, we scrapped the comments on the three plataforms. 
+To complement our analysis, we scrapped the comments on the two platforms. 
 
 - 300 Comments on Expert + 6915 on Facebook. 
 
-- Perform Dictionary Methods Sentiment Analysis. 
+- Performed Dictionary Methods Sentiment Analysis. 
 
-- Labelled the comments manually to identify topics. 
+- Labeled the comments manually to identify topics. 
 
 - Deep Learning Models to identify toxicity. 
 
@@ -369,12 +353,11 @@ class:inverse, middle, center
 ## Experimental Results
 
 ---
-## Frequency and Toxicity Hypothesis Key Results
-
+## Frequency and Toxicity Hypotheses
 .center[
-Social chat somewhat less informative, enjoyable, and engaging
+Facebook chat somewhat less informative, enjoyable, and engaging
 ```{r  echo=FALSE, out.width= '80%'}
-knitr::include_graphics("./fgv_pres/ftplot.png")
+knitr::include_graphics("./fgv_pres/frequencyplot.png")
 ```
 ]
 
@@ -388,7 +371,6 @@ knitr::include_graphics("./fgv_pres/ftplot.png")
 ---
 ## Content Effect
 .center[
-Social chat somewhat less informative, enjoyable, and engaging
 ```{r  echo=FALSE, out.width= '80%'}
 knitr::include_graphics("./fgv_pres/ft_on_negative_comments.png")
 ```
@@ -405,20 +387,16 @@ knitr::include_graphics("./fgv_pres/pollplot.png")
 ---
 ## Context Effect
 .center[
-Positive social chat associated with projected poll performance.
 ```{r  echo=FALSE, out.width= '80%'}
 knitr::include_graphics("./fgv_pres/polls_on_positive_comments.png")
 ```
 ]
-
 
 ---
 ## Summary
 
 .pull-left[
 **Main Findings**:
-
-- Includes more frequent and more negative comments than expert chat.
 
 - Creates worse viewing experience.
 
@@ -431,10 +409,9 @@ knitr::include_graphics("./fgv_pres/polls_on_positive_comments.png")
 .pull-right[
 **Next Steps**:
 
-- More research on the mechanism
+- More research on the mechanism (laboraty experiments).
 
-- More Comparative Evidence. 
-
+- More comparative evidence (Does it replicate to other plataforms or other countries?). 
 
 - More descriptive evidence about these news technologies.
 
@@ -448,19 +425,17 @@ class:inverse, middle, center
 
 --
 
+<!--
+
 ---
 
 ## Brief Summary:
 
-We scrapped the chatboxes of livestreamed Presidential debates on the ABC News, NBC News, and Fox News Face-book pages. 
+We scrapped (using Selenium) the chatboxes of livestreamed Presidential debates on the ABC News, NBC News, and Fox News Facebook pages. 
 
 Collected more than one hundread thousand comments. 
 
-Use deep-learning toxicity models to detect the amount of hateful sppech in each of the debates. 
-
----
-## The Machine Working:
-
+Deployed deep-learning  toxicity models and dictionary methods to detect the amount of hateful speech on streaming chats. 
 
 ---
 ## Levels of Toxicity
@@ -468,14 +443,15 @@ Use deep-learning toxicity models to detect the amount of hateful sppech in each
 Close to 20% of comments are classified as toxic or insult. 
 
 ```{r  echo=FALSE, out.width= '80%'}
-knitr::include_graphics("./fgv_pres/tox_jqd.png")
+knitr::include_graphics("./fgv_pres/tox_jqd_desc.png")
 ```
 ---
 ## Strong Partisan Dynamics. 
 
 ```{r  echo=FALSE, out.width= '80%'}
-knitr::include_graphics("./fgv_pres/tox_jqd_desc.png")
+knitr::include_graphics("./fgv_pres/tox_jqd.png")
 ```
+-->
 
 ---
 class: inverse, middle, center
@@ -522,6 +498,7 @@ class:middle
 
 
 ---
+class:middle
 
 ### Take time to learn SQL. Simple, and almost as important as any other language. 
 
