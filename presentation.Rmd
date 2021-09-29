@@ -86,11 +86,15 @@ class:middle, center, inverse
 
 ---
 
-## From Passive Consumer to Co-Creator.
+## Recent Changes on Media Market. 
 
-The emergence of new technologies has allowed media consumption to become more social.  
+--
 
-Users moved from being passive consumers to active co-creators. 
+- New media technologies <~~> Media Consumption and Broadcasting becoming more social.  
+
+--
+
+- Users move from passive consumers to an active co-creators of the media experience. 
 
 --
 
@@ -104,33 +108,32 @@ Users moved from being passive consumers to active co-creators.
 
 --
 
- **Streaming Chats** are the most recent and powerful manifestation of new technologies allowing users to become co-creators of media production. 
---
+---
+class: center, middle
 
-
+### **Streaming Chats** are the most recent and powerful manifestation of these user-centered technologies.
 
 ---
 ## Streaming Chats
 
 --
 
-- **Video Feed + Comments: All in one screen.**
+**Video Feed + Social Chat: All in one screen.**
 
 --
 
-- Become more ubiquitous to media broadcasting in the last few years.
+Already widely adopted by mainstream media broadcasting: news TV shows, sports programs, and political debates.
 
 --
 
-- Popular among the younger generations.
+Popular among the younger generations.
 
-    - Twitch (Amazon)
-    - YouTube/YouTube Gaming (Google)
-    - Mixer (Microsoft)
-    - Facebook Lives
+- Twitch (Amazon)
+- YouTube/YouTube Gaming (Google)
+- Mixer (Microsoft)
+- Facebook Lives
 
 --
-
 
 ---
 ## Political Debates
@@ -197,20 +200,23 @@ We then surveyed the respondents after the debate and measured the effects of st
 
 ---
 
-## How are streaming chats different from Dual Screening?
+## How are streaming chats different from Dual Screening ?
   
+<br><br>
+**Different audience**. 6 out 10 young americans prefer to use online streaming to watch TV (Pew,  2017). 
   
-- **Different audience**. 6 out 10 young americans prefer to see TV on streaming (Pew,  2017). 
-  
-- **Different Technology**. Chat streams at eye-level; only one conversation. 
+**Different Technology**: Chat streams at eye-level; only one, quick, and fast conversation. 
 
-- **More cross-cutting information**
+**More cross-cutting information**: particularly on political debates
+---
+class: middle
 
-- **Shift from polite (possibly partisan) broadcasters towards the garbage fire that are the comment sections** 
 
-- **Chaotic Discussion**: Only observes a node in the network (majority illusion)
+- **Shift from polite (possibly partisan) broadcasters towards an experience similar to comments sections**: short comments, memes, others 
 
-- **Priming a very different set of issues**
+- **Chaotic Discussion**:Hard to sort, only see comments in the aggregate,   prone to lead to majority illusion.
+
+- **Priming a very different set of issues**: most of them do not appear on the public discussions. 
 
 
 
@@ -218,17 +224,18 @@ We then surveyed the respondents after the debate and measured the effects of st
 --
 
 ---
-## How does streaming chat influence perceptions of political events?
+## How do streaming chats influence perceptions of political events?
 
-Mix of Attributes: 
+<br>
 
 - **Frequency**: high volume of very short comments.
+
+- **Toxicity**: almost anonymity and size of the comments are prone to high levels of toxicity. 
 
 - **Content**: topics are mostly distinct from the ones discussed publicly during campaigns. 
 
 - **Context**: comments' composition leads to inaccurate inferences of overall public.
 
-- **Toxicity**: almost anonymity and size of the comments are prone to high levels of toxicity. 
 
 ---
 class:inverse, middle, center
@@ -418,47 +425,20 @@ knitr::include_graphics("./fgv_pres/polls_on_positive_comments.png")
 ]
 
 ---
-class:inverse, middle, center
-
-
-#### Bringing the Audience Back In: Connective Effervescence and Streaming Chat During Political Debates. *Journal of Quantitative Description: Digital Media.*
-
---
-
-<!--
-
----
-
-## Brief Summary:
-
-We scrapped (using Selenium) the chatboxes of livestreamed Presidential debates on the ABC News, NBC News, and Fox News Facebook pages. 
-
-Collected more than one hundread thousand comments. 
-
-Deployed deep-learning  toxicity models and dictionary methods to detect the amount of hateful speech on streaming chats. 
-
----
-## Levels of Toxicity
-
-Close to 20% of comments are classified as toxic or insult. 
-
-```{r  echo=FALSE, out.width= '80%'}
-knitr::include_graphics("./fgv_pres/tox_jqd_desc.png")
-```
----
-## Strong Partisan Dynamics. 
-
-```{r  echo=FALSE, out.width= '80%'}
-knitr::include_graphics("./fgv_pres/tox_jqd.png")
-```
--->
-
----
 class: inverse, middle, center
 
 ### As these new technologies start to dominate broadcasting of political events, attracting particularly <a style:"color=red"> younger audiences </a>, we need more social science <a style:"color=red"> descriptive and causal research </a> about the effects on users' behavior. 
 
 ---
+
+class:inverse, middle, center
+
+
+#### Bringing the Audience Back In: Connective Effervescence and Streaming Chat During Political Debates. *Journal of Quantitative Description: Digital Media, 2021*
+
+---
+
+
 class: middle, center
 
 ### `r icons::simple_icons("twitter")` About being a Researcher in the Industry `r icons::simple_icons("twitter")`
@@ -467,7 +447,7 @@ class: middle, center
 ---
 class:middle
 
-### Learn your methods... But it is likely that you will be hired by the interesting questions your research answers. 
+### Learn your methods... But you will be hired by the interesting questions your research answers. 
 
 --
 
